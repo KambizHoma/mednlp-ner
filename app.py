@@ -70,7 +70,7 @@ tests = [
 ]
 
 # Input section
-st.header("📋 Step 1: Input Medical Text")
+st.header("Step 1: Input Medical Text")
 
 if demo_mode != "Custom Input":
     text_input = st.text_area(
@@ -89,7 +89,7 @@ else:
 st.markdown("---")
 
 # Analyze button
-if st.button("🔍 Analyze Medical Text with NLP", type="primary", use_container_width=True):
+if st.button("Analyze Medical Text with NLP", type="primary", use_container_width=True):
     
     if not text_input.strip():
         st.error("Please enter some medical text to analyze.")
@@ -319,7 +319,7 @@ if st.button("🔍 Analyze Medical Text with NLP", type="primary", use_container
         with perf_col4:
             st.metric("Entities/Second", "1,200+")
         
-        st.info("💡 **Business Value:** Nippofin MedNLP can process thousands of medical documents per second, automatically extracting structured data from unstructured clinical text for research, diagnosis support, and medical coding.")
+        st.info("**Business Value:** Nippofin MedNLP can process thousands of medical documents per second, automatically extracting structured data from unstructured clinical text for research, diagnosis support, and medical coding.")
 
 st.markdown("---")
 st.caption("Nippofin MedNLP by Nippotica - Fast Financial Computing on Clouds | Medical NER Demo v1.0")
