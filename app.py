@@ -95,7 +95,7 @@ if st.button("🔍 Analyze Medical Text with NLP", type="primary", use_container
         st.error("Please enter some medical text to analyze.")
     else:
         # Processing animation
-        with st.spinner("🤖 Nippofin MedNLP is processing medical text..."):
+        with st.spinner("Nippofin MedNLP is processing medical text..."):
             progress_bar = st.progress(0)
             status_text = st.empty()
             
@@ -189,7 +189,7 @@ if st.button("🔍 Analyze Medical Text with NLP", type="primary", use_container
         
         # Results
         st.markdown("---")
-        st.header("📊 Step 2: NER Analysis Results")
+        st.header("Step 2: NER Analysis Results")
         
         # Summary metrics
         col1, col2, col3, col4, col5 = st.columns(5)
